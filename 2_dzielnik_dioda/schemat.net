@@ -1,9 +1,0 @@
-* C:\users\cod3r\Favorites\Elektronika\2_dzielnik_dioda\schemat.asc
-V1 N001 0 5
-R1 N001 N002 1k
-D1 N002 0 D
-.model D D
-.lib C:\users\cod3r\AppData\Local\LTspice\lib\cmp\standard.dio
-.dc V1 0 5 0.1
-.backanno
-.end
