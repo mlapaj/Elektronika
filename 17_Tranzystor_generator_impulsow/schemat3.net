@@ -1,0 +1,17 @@
+* C:\users\cod3r\Favorites\Elektronika\17_Tranzystor_generator_impulsow\schemat3.asc
+V2 N003 0 PULSE(0 5 0.05 0.001 0.001 0.05 1.5)
+Q1 N002 N004 N005 0 NPN
+R1 N005 0 20
+Q2 OUT N002 N005 0 NPN
+R2 N001 N002 1k
+R3 N001 OUT 1k
+V1 N001 0 5V
+R4 N004 VIN 25k
+R5 VIN N003 1k
+C1 VIN 0 10µ
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\cod3r\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 0 0.18s 0 0.001s
+.backanno
+.end

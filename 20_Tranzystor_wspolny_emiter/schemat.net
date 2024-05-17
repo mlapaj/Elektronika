@@ -1,0 +1,16 @@
+* C:\users\cod3r\Favorites\Elektronika\20_Tranzystor_wspolny_emiter\schemat.asc
+V§Ucc N001 0 20
+C1 N003 IN 0.1µ
+R1 N001 N003 110k
+R2 N003 0 10k
+R3 N001 N002 10k
+R4 N004 0 1k
+Q1 N002 N003 N004 0 NPN
+V1 IN 0 SINE(0 1 1000)
+C2 OUT N002 0.1µ
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\cod3r\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 0 0.01s 0 0.001s
+.backanno
+.end
